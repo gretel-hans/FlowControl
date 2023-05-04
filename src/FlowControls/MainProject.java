@@ -24,11 +24,11 @@ public class MainProject {
 
 		System.out.println("------------");
 
-		//stampaNumero();
+		stampaNumero();
 
 		System.out.println("------------");
 
-		//contoRovescio();
+		contoRovescio();
 
 		System.out.println("------------");
 
@@ -97,11 +97,11 @@ public class MainProject {
 				if(parola.charAt(i)=='q'){
 					parolaComplessiva+=parola.charAt(i);
 				}else{
-					parolaComplessiva+=parola.charAt(i) + ", ";
+					parolaComplessiva+=parola.charAt(i) + " - ";
 				}
 				if (parola.charAt(i)=='q'){
-					System.out.println("Trovato la q in "+ i +" posizione");
-					System.out.println("Parola complessiva:"+ parolaComplessiva);
+					System.out.println("Parola complessiva: "+ parolaComplessiva);
+					System.out.println("Trovato la q in "+ (i+1) +"º posizione");
 					 trovato=false;
 					break;
 				}
