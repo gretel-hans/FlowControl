@@ -89,22 +89,19 @@ public class MainProject {
 	public static void dividiStringa() {
 		boolean trovato=false;
 		String parolaComplessiva="";
-		int indice=1;
 		do {
 			Scanner sc= new Scanner(System.in);
 			System.out.print("Inserisci una parola: ");
 			String parola=sc.nextLine();
 			for(int i=0;i<parola.length();i++){
 				if(parola.charAt(i)=='q'){
-					parolaComplessiva+=parola.charAt(i);
-					indice++;
+					//parolaComplessiva+=parola.charAt(i);
+					
 				}else{
 					parolaComplessiva+=parola.charAt(i) + " - ";
-					indice++;
 				}
 				if (parola.charAt(i)=='q'){
 					System.out.println("Parola complessiva: "+ parolaComplessiva);
-					System.out.println("Trovato la q in "+ (indice-1) +"º posizione");
 					 trovato=true;
 					break;
 				}
